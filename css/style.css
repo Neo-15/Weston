@@ -2866,6 +2866,10 @@ h1{
   .mainBottomItem::after, .mainBottomItemStandart::after{
     right: 15px;
   }
+	
+.mainBottom .bth-container{
+    max-width:135px;
+}
   
   .sextionTitle{
     font-size: 23px;
