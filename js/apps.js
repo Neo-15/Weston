@@ -173,7 +173,7 @@ $('.headerButton.search').click(function(){
   
   
   
-   $('.main, .popularProducts, .benefits, .aboutUs, .catalog, .recentPublications, .footer, blogMain, .blogForm, .article, .news, .blogForm, .photogalery, .photoGaleryCatalog,').click(function(){
+   $('.main, .popularProducts, .benefits, .aboutUs, .catalog, .recentPublications, .footer, blogMain, .blogForm, .article, .news, .blogForm, .photogalery, .photoGaleryCatalog').click(function(){
      $('.headerButton').removeClass('clicked');
      $('.headerMenuContainer').animate({
               left: "-300"
