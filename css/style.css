@@ -149,7 +149,8 @@ body{
   background-repeat: no-repeat;
 }
 
-.headerLogoMobile{
+.headerLogoMobile,
+.mainLogo{
   display: none;
 }
 
