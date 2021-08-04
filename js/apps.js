@@ -207,7 +207,6 @@ $('.headerButton.search').click(function(){
   });
   
   $('.popapclose, header, footer, .reviews, .blogForm, .grayBackground').click(function(){
-    event.preventDefault();
     $("section, footer, div").removeClass('shadow');
     $('.popapReviev').removeClass('active');
   });
