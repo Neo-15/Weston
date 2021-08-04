@@ -2922,6 +2922,10 @@ h1{
   .mainBottomItem::after, .mainBottomItemStandart::after{
     right: 15px;
   }
+	
+.mainBottom .bth-container{
+    max-width:135px;
+}
   
   .mainBottom .bth-container{
     max-width: 140px;
