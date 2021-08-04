@@ -150,14 +150,6 @@ $('.headerButton.search').click(function(){
   
   $(".headerMenuMobile").parent().find('.searchContainer').toggleClass('active');
 });
-
-  
-   $('.main, .popularProducts, .benefits, .aboutUs, .catalog, .recentPublications, .footer, blogMain, .blogForm, .article, .news, .blogForm, photogalery, photoGaleryCatalog').click(function(){
-    $(".headerMenuMobile").parent().find('.primary-menu-container').removeClass('active');
-  
-    $(".headerMenuMobile").parent().find('.headerCalculatorContainer').removeClass('active');
-    $(".headerMenuMobile").parent().find('.searchContainer.mobile').removeClass('active');
-  });
   
   $('.langButton').click(function(){
     event.preventDefault();
@@ -172,8 +164,7 @@ $('.headerButton.search').click(function(){
   });
   
   
-  
-   $('.main, .popularProducts, .benefits, .aboutUs, .catalog, .recentPublications, .footer, blogMain, .blogForm, .article, .news, .blogForm, .photogalery, .photoGaleryCatalog').click(function(){
+   $('.main, .popularProducts, .benefits, .aboutUs, .catalog, .recentPublications, .footer, blogMain, .blogForm, .article, .news, .blogForm, .photogalery, .photoGaleryCatalog, .popularProducts.catalog, .productCard,  .reviews, .reviewForm, .notFoundContainer').click(function(){
      $('.headerButton').removeClass('clicked');
      $('.headerMenuContainer').animate({
               left: "-300"
@@ -182,15 +173,51 @@ $('.headerButton.search').click(function(){
      $('.headerTel').parent().find(".disabled").slideUp();
      $('.langContainer').removeClass('clicked');
      $('.telephoneContainer').removeClass('clicked');
+     $(".searchContainer").removeClass('active');
+     
+    $(".headerMenuMobile").parent().find('.primary-menu-container').removeClass('active');
+    $(".headerMenuMobile").parent().find('.headerCalculatorContainer').removeClass('active');
+    $(".headerMenuMobile").parent().find('.searchContainer.mobile').removeClass('active');
+     
+     
    });
   
      $('.headerSearch').click(function(){
       event.preventDefault();
      $(".searchContainer").toggleClass('active');
    });
-    
-     $('.main, .popularProducts, .benefits, .aboutUs, .catalog, .recentPublications, .footer, blogMain, .blogForm, .article, .news, .blogForm, .photogalery, .photoGaleryCatalog').click(function(){
-      $(".searchContainer").removeClass('active');
-    });
+  
+//Popap  
+  $('.popapButton').click(function(){
+    event.preventDefault();
+    $("section, footer, div").addClass('shadow');
+    $('.printPopap').addClass('active');
+  });
+  
+  $('.popapSubmit').click(function(){
+    $('.printPopap').removeClass('active');
+    $('.popapThankYou').addClass('active');
+  });
+  
+  //Popap-Review
+  $('.popapBth').click(function(){
+    event.preventDefault();
+    $("section, footer, div").addClass('shadow');
+    $('.popapReviev').addClass('active');
+  });
+  
+  $('.popapclose, header, footer, .reviews, .blogForm, .grayBackground').click(function(){
+    event.preventDefault();
+    $("section, footer, div").removeClass('shadow');
+    $('.popapReviev').removeClass('active');
+  });
+  
+//  EndPopap
 
- });
+    $('header, .crumbsCalculator, .finishedGoods, .popularProducts.catalog, .grayBackground, footer, .popapPrintClose').click(function(){
+      
+        $('.printPopap').removeClass('active');
+        $('.popapThankYou').removeClass('active');
+        $('section, footer, div').removeClass('shadow');
+   });
+});

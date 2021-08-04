@@ -1,0 +1,143 @@
+.menu-item a,
+.page_item a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    text-indent: -5px;
+}
+.lang-item {
+    text-transform: uppercase;
+}
+
+.dataContainer p:first-of-type::after {
+    content: "";
+    width: 5px;
+    min-width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 35%;
+    /* left: 35.5%; */
+    border-radius: 50%;
+    background: #6D7280;
+    margin-left: 12px;
+}
+.dataContainer p:first-of-type::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: 35%;
+    left: 35.5%;
+    border-radius: 50%;
+    background: #6D7280;
+}
+.recentPublications .itemPhoto {
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 265px;
+    max-height: 265px;
+}
+.blogMain .itemPhoto {
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 265px;
+    max-height: 265px;
+}
+.recentPublications .recentPublicationsItem {
+    margin-bottom: 30px;
+}
+/*CRUMBS*/
+.crumbsContainer a {
+    opacity: 0.6;
+}
+.crumbsContainer a,
+.crumbsContainer span
+{
+    font-family: 'Manrope-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: 0.1s;
+    position: relative;
+    margin-right: 30px;
+}
+.crumbsContainer a::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 43%;
+    right: -19px;
+}
+.crumbsContainer .breadcrumb_last {
+    opacity: 1;
+}
+.articleContentGray.bgBlack {
+    background-color: black;
+}
+.bgGray {
+    background-color: #101010;
+}
+.article .articleContentGray.articleContentPost {
+    padding-top: 0;
+}
+.article .articleContent {
+    padding: 0;
+}
+.articleContentGray img {
+    max-width: 100%;
+}
+.article figure ul {
+    padding: 0;
+}
+.article figure ul li::before {
+    display: none;
+}
+
+.crumbsContainer {
+    opacity: 1;
+}
+.crumbsContainer {
+    font-family: 'Manrope-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: 0.1s;
+    position: relative;
+    margin-right: 30px;
+}
+.woocommerce img.formImg, .woocommerce-page img.formImg {
+    max-width: 540px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.productPhotoContainer.large img {
+    max-width: 517px;
+    width: 100%;
+    max-height: 517px;
+}
+.productCardContainer .producCardItem  img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}

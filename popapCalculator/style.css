@@ -5703,300 +5703,6 @@ h1{
   opacity: 1;
 }
 
-/*Product Popap*/
-
-.productPopap{
-  display: flex;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 1110px;
-  width: 100%;
-  background: #FFFFFF;
-  color: #000;
-  padding: 120px 95px;
-  visibility: hidden;
-}
-
-.productPopap.shadow{
-  opacity: 0;
-}
-
-.productPopap.active{
-  opacity: 1;
-  visibility: visible;
-}
-
-.popapclose{
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 12px;
-  height: 12px;
-}
-
-.popapclose::before{
-  content: "";
-  width: 15px;
-  height: 2px;
-  position: absolute;
-  top: 5px;
-  right: 0;
-  background-color: #000;
-  transform: rotate(45deg);
-}
-
-.popapclose::after{
-  content: "";
-  width: 15px;
-  height: 2px;
-  position: absolute;
-  top: 5px;
-  left: -3px;
-  background-color: #000;
-  transform: rotate(-45deg);
-}
-
-.popapInfo{
-  width: 56%;
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-}
-
-.popapSuptitle{
-  margin: 0;
-  margin-bottom: 15px;
-  font-family: 'Montserrat-Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #000000;
-  opacity: 0.5;
-}
-
-.productTitle{
-  margin: 0;
-  margin-bottom: 30px;
-  font-family: 'ABeeZee', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 41px;
-  color: #000000;
-}
-
-.productModel{
-  margin: 0;
-  margin-bottom: 30px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 23px;
-  color: #020202;
-  opacity: 0.5;
-}
-
-.productPopapDescription{
-  margin: 0;
-  margin-bottom: 38px;
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
-  opacity: 0.7;
-}
-
-.prise{
-  max-width: 150px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.productPopapPrise{
-  margin: 0;
-  margin-bottom: 14px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 23px;
-  line-height: 27px;
-  text-decoration-line: line-through;
-  color: #8C8C8F;
-}
-
-.priseWithDiscount{
-  margin: 0;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 30px;
-  color: #010101;
-}
-
-.productPopap form{
-  max-width: 445px;
-  width: 100%;
-}
-
-.productPopap form input[type="text"], .productPopap form input[type="tel"], .productPopap form textarea{
-  max-width: 445px;
-  width: 100%;
-  padding: 17px 22px;
-  height: 50px;
-  border: 1px solid #000000;
-  background-color: #fff;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #1A1A1F;
-  opacity: 1;
-  margin-bottom: 20px;
-  outline: none;
-  cursor: pointer;
-}
-
-.productPopap form input[type="text"]::placeholder,
-.productPopap form input[type="tel"]::placeholder, 
-.productPopap form textarea::placeholder{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #1A1A1F;
-  opacity: 0.7;
-}
-
-.productPopap form textarea{
-  height: 150px;
-}
-
-.productPopap form .bth-container{
-  max-width: 445px;
-  width: 100%;
-  position: relative;
-  z-index: 15;
-}
-
-.productPopap form .bth-container .ease{
-  height: 0;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  color: transparent;
-  outline: none;
-  border: 0;
-  cursor: pointer;
-  z-index: 16;
-  transition: 0.3s;
-}
-
-.productPopap form .bth-container:hover .ease{
-  color: #fff;
-  height: 55px;
-}
-
-.productPopap form input[type="submit"]{
-  max-width: 445px;
-  width: 100%;
-  height: 55px;
-  background-color: #000;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  outline: none;
-  border: 0;
-  cursor: pointer;
-  position: relative;
-  z-index: 11;
-}
-
-.popapThankYou{
-  display: none;
-  max-width: 510px;
-  width: 100%;
-  height: 458px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 53px;
-  background: #FFFFFF;
-}
-
-.popapThankYou.active,
-.PopapReviev.active{
-  display: flex;
-  opacity: 1;
-  z-index: 100;
-}
-
-.popapThankYou .done{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1);
-  margin-bottom: 48px;
-}
-
-.popapThankYou h2{
-  margin: 0;
-  margin-bottom: 16px;
-  font-family: 'Manrope-SemiBold';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-}
-
-.popapThankYou p{
-  margin: 0;
-  font-family: 'Montserrat-Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  color: #000000;
-  opacity: 0.7;
-}
-
-.popapThankYou.PopapReviev p{
-  font-size: 20px;
-  opacity: 1;
-}
 
 /*Adapt Product card*/
 
@@ -6107,7 +5813,7 @@ h1{
     padding: 80px 65px;
   }
   
-  .productPopap form{
+  .popapButtons form{
     max-width: 325px;
     width: 100%;
   }
@@ -6221,7 +5927,7 @@ h1{
     padding: 50px 35px;
   }
   
-  .productPopap form{
+  .popapButtons form{
     max-width: 270px;
     width: 100%;
   }
@@ -6288,7 +5994,7 @@ h1{
       flex-wrap: wrap;
     }
     
-  .productPopap form{
+  .popapButtons form{
     max-width: 305px;
     width: 100%;
     margin-left: auto;
@@ -6333,17 +6039,17 @@ h1{
     margin-bottom: 15px;
   }
     
-  .productPopap form textarea{
+  popapButtons form textarea{
     height: 120px;  
   }
     
-  .productPopap form input[type="submit"]{
+  popapButtons form input[type="submit"]{
     height: 40px;
     font-size: 11px;
     line-height: 13px;
   }
     
-  .productPopap form .bth-container:hover .ease{
+  popapButtons form .bth-container:hover .ease{
     height: 40px;
     font-size: 11px;
     line-height: 13px;
@@ -6763,77 +6469,6 @@ h1{
   position: relative;
 }
 
-/*EndRating*/
-
-/*RatingNew*/
-
-  .rating-mini {
-      margin-top: 10px;
-      display: inline-block;
-      font-size: 0;
-  }
-  .rating-mini span {
-      padding: 0;
-      font-size: 20px;
-      line-height: 1;
-      color: lightgrey;
-  }
-  .rating-mini > span:before {
-      content: '★';
-  }
-  .rating-mini > span.active {
-      color: gold;
-  }
-/*EndRatingNew*/
-
-/*faceIcon*/
-
-.reviewForm form .formItem .bth-container.ava{
-  max-width: 200px;
-  width: 100%;
-  height: 40px;
-  margin-bottom: 25px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.reviewForm form .formItem .bth-container.ava:hover .ease{
-  height: 40px;
-}
-
-.faceIcon{
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-}
-
-.faceIconLabel{
-  margin: 0;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-  position: relative;
-  z-index: 11;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-
-input[#file-upload-button]{
-  background-color: #000;
-}
-/*EndfaceIcon*/
-
 .reviewForm form .formItem textarea{
   max-width: 410px;
   width: 100%;
@@ -7153,16 +6788,6 @@ input[#file-upload-button]{
   margin-bottom: 40px;
 }
 
-.notFoundPhotoContainer.review{
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-}
-
-.photosubtitle.last{
-  margin-top: 20px;
-}
-
 .notFoundPhotoContainer img{
   max-width: 100%;
   width: 100%;
@@ -7272,16 +6897,8 @@ input[#file-upload-button]{
 }
 
 .calculator{
-  position: relative;
-}
-
-.calculatorBackground{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .calculatorForm{
@@ -7723,7 +7340,7 @@ input[#file-upload-button]{
 @media (max-width: 570px){
   
   .calculator .container{
-    margin-left: 38px;
+    margin-left: 32px;
   }
   
   .calculatorForm{
@@ -7864,6 +7481,65 @@ input[#file-upload-button]{
   }
 }
 
+/*Product Popap ThankYou*/
+
+.popapThankYou{
+  display: none;
+  max-width: 510px;
+  width: 100%;
+  height: 458px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 53px;
+  background: #FFFFFF;
+}
+
+.popapThankYou.active{
+  display: flex;
+  opacity: 1;
+  z-index: 100;
+}
+
+.popapThankYou .done{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 48px;
+}
+
+.popapThankYou h2{
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: 'Manrope-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.popapThankYou p{
+  margin: 0;
+  font-family: 'Montserrat-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.7;
+}
+
 /*Popap Calculator*/
 
 .printPopap{
@@ -7878,6 +7554,11 @@ input[#file-upload-button]{
   background: #FFFFFF;
   padding-top: 75px;
   padding-bottom: 65px;
+}
+
+.printPopap.active{
+  display: block;
+  opacity: 1;
 }
 
 .printPopap .container{
@@ -8060,9 +7741,70 @@ input[#file-upload-button]{
 
 .popapFooter{
   display: flex;
+  justify-content: center;
   max-width: 920px;
   width: 100%;
   margin-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popapFooter form{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.popapFooter form input[type="text"], .popapFooter form input[type="tel"], .popapFooter form textarea{
+  max-width: 600px;
+  width: 100%;
+  padding: 17px 22px;
+  height: 50px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1A1A1F;
+  opacity: 1;
+  margin-bottom: 30px;
+  outline: none;
+  cursor: pointer;
+  resize: none;
+}
+
+.popapFooter form textarea{
+  margin-bottom: 50px;
+}
+
+.popapFooter form input[type="text"]::placeholder,
+.popapFooter form input[type="tel"]::placeholder, 
+.popapFooter form textarea::placeholder{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1A1A1F;
+  opacity: 0.7;
+}
+
+.popapFooter form textarea{
+  height: 150px;
+}
+
+.popapButtons{
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popapFooter form .bth-container:hover .ease{
+  color: #fff;
+  height: 55px;
 }
 
 .popapFooter .bth-container{
@@ -8077,6 +7819,7 @@ input[#file-upload-button]{
   width: 100%;
   height: 55px;
   border: 1px solid #000000;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8091,7 +7834,7 @@ input[#file-upload-button]{
   cursor: pointer;
   outline: none;
   position: relative;
-  z-index: 11;
+  z-index: 18;
   transition: .5s ease;
 }
 
@@ -8321,6 +8064,10 @@ input[#file-upload-button]{
     padding-right: 20px;
   }
   
+  .popapButtons{
+    width: 100%;
+  }
+  
   .popapFooter .bth-container{
     max-width: 180px;
     margin-right: 20px;
@@ -8420,7 +8167,6 @@ input[#file-upload-button]{
   }
   
   .popapFooter{
-    max-width: 220px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -8429,17 +8175,36 @@ input[#file-upload-button]{
     padding-right: 20px;
   }
   
+  .popapFooter form input[type="text"], .popapFooter form input[type="tel"], .popapFooter form textarea{
+    height: 45px;
+  }
+  
+  .popapFooter form textarea{
+    margin-bottom: 40px;
+  }
+  
+  .popapButtons{
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   .popapFooter .bth-container{
-    max-width: 220px;
+    max-width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  
+  .order, .continueShopping{
+    max-width: 100%;
+    width: 100%;
   }
   
   .popapPrintAttention div{
     font-size: 12px;
   }
   
-  .popapFooter .bth-container:hover .ease{
+  .popapFooter form .bth-container:hover .ease{
     height: 45px;
   }
   
